@@ -39,7 +39,8 @@
 Minitel::Minitel(HardwareSerial& serial) : mySerial(serial) {
   // A la mise sous tension du Minitel, la vitesse des échanges entre
   // le Minitel et le périphérique est de 1200 bauds par défaut.
-  mySerial.begin(1200);
+   mySerial.begin(1200);
+   //mySerial.swap(); // le ESP8266 que j'ai 
 }
 /*--------------------------------------------------------------------*/
 
